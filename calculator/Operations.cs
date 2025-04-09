@@ -1,20 +1,11 @@
 ﻿namespace calculator;
 public class Operations
 {
-    public int sum(int number1, int number2)
-    {
-        return number1 + number2;
-    }
+    public int sum(int number1, int number2) => number1 + number2;
 
-    public int subtraction(int number1, int number2)
-    {
-        return number1 - number2;
-    }
+    public int subtraction(int number1, int number2) => number1 - number2;
 
-    public int multiplication(int number1, int number2)
-    {
-        return number1 * number2;
-    }
+    public int multiplication(int number1, int number2) => number1 * number2;
 
     public double division(double number1, double number2)
     {
@@ -27,8 +18,5 @@ public class Operations
         return number2 / number1;
     }
 
-    public double media(double number1, double number2)
-    {
-        return (number1 + number2) / 2;
-    }
+    public double media(double number1, double number2) => (number1 + number2) / 2;
 }
