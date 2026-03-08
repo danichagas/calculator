@@ -7,6 +7,7 @@ loop do
 
   print "Digite a sua escolha: "
   option = gets.chomp.to_i
+
   if option == 1
     print "Digite o primeiro numero: "
     firstNumber = gets.chomp.to_i
@@ -14,9 +15,20 @@ loop do
     secondNumber = gets.chomp.to_i
     sum = firstNumber + secondNumber
     puts "#{firstNumber} + #{secondNumber} = #{sum}"
-  end
-  if option == 0
+
+  elsif option == 2
+    print "Digite o primeiro numero: "
+    firstNumber = gets.chomp.to_i
+    print "Digite o segundo numero: "
+    secondNumber = gets.chomp.to_i
+    multiplication = firstNumber * secondNumber
+    puts "#{firstNumber} * #{secondNumber} = #{multiplication}"
+
+  elsif option == 0
     puts "SAINDO..."
     break
+
+  else
+    puts "Opção invalida"
   end
 end
