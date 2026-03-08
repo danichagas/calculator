@@ -24,10 +24,18 @@ loop do
     multiplication = firstNumber * secondNumber
     puts "#{firstNumber} * #{secondNumber} = #{multiplication}"
 
+  elsif option == 3
+    print "Digite o primeiro numero: "
+    firstNumber = gets.chomp.to_i
+    print "Digite o segundo numero: "
+    secondNumber = gets.chomp.to_i
+    subtraction = firstNumber - secondNumber
+    puts "#{firstNumber} - #{secondNumber} = #{subtraction}"
+  
   elsif option == 0
     puts "SAINDO..."
     break
-
+    
   else
     puts "Opção invalida"
   end
