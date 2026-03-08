@@ -32,6 +32,14 @@ loop do
     subtraction = firstNumber - secondNumber
     puts "#{firstNumber} - #{secondNumber} = #{subtraction}"
   
+  elsif option == 4
+    print "Digite o primeiro numero: "
+    firstNumber = gets.chomp.to_i
+    print "Digite o segundo numero: "
+    secondNumber = gets.chomp.to_i
+    division = firstNumber / secondNumber
+    puts "#{firstNumber} / #{secondNumber} = #{division}"
+
   elsif option == 0
     puts "SAINDO..."
     break
